@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "569005752805",
+    "project_id": "curriculumvitaleflutter",
+    "storage_bucket": "curriculumvitaleflutter.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:569005752805:android:c1c642c3b4b4067cd62f0c",
+        "android_client_info": {
+          "package_name": "com.example.curriculum_vitale"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "569005752805-vjv943n7o1otih8492gu032sk09be9op.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDs9CPFtF4srVjBTKlvRmA2Hg7Cb6iKSJ8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "569005752805-vjv943n7o1otih8492gu032sk09be9op.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
