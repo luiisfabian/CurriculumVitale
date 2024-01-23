@@ -99,27 +99,29 @@ class _AboutPageState extends State<AboutPage> {
                 Center(
                   child: Container(
                     height: size.height * 0.6,
-                    width: size.width * 0.4,
+                    width: size.width * 0.6,
                     padding: EdgeInsets.all(30),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(30),
                       color: Color.fromARGB(255, 0, 156, 246),
                     ),
-                    child: Column(
-                      children: [
-                        BounceInUp(
-                          duration: Duration(seconds: 3),
-                          child: Text(
-                            "Tecnólogo en sistemas, Con experiencia laboral como desarrollador de software y auxiliar de sistemas en soporte; conocimiento y manejo de herramientas como Lading page, web page, SQL Server, Firebase, Angular, flutter, Html 5, Bootstap, Firebase, Angular material; capacidad para realizar soporte a usuarios en el área de sistemas.",
-                            style: TextStyle(
-                              fontSize: 30,
-                              fontWeight: FontWeight.bold,
-                              color: Colors.white,
-                              fontFamily: 'Raleway',
+                    child: SingleChildScrollView(
+                      child: Column(
+                        children: [
+                          BounceInUp(
+                            duration: Duration(seconds: 3),
+                            child: Text(
+                              "Tecnólogo en sistemas, Con experiencia laboral como desarrollador de software y auxiliar de sistemas en soporte; conocimiento y manejo de herramientas como Lading page, web page, SQL Server, Firebase, Angular, flutter, Html 5, Bootstap, Firebase, Angular material; capacidad para realizar soporte a usuarios en el área de sistemas.",
+                              style: TextStyle(
+                                fontSize: 30,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white,
+                                fontFamily: 'Raleway',
+                              ),
                             ),
                           ),
-                        ),
-                      ],
+                        ],
+                      ),
                     ),
                   ),
                 )
