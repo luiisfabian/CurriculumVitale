@@ -15,8 +15,8 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Curriculum Vitale',
       theme: ThemeData(
-        primarySwatch: Colors.blueGrey,
-        fontFamily: 'roboto'
+        primarySwatch: Colors.red,
+        fontFamily: 'Courier New'
       ),
       home: HomePage()
     );

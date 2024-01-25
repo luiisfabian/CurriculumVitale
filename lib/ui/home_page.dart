@@ -28,7 +28,6 @@ static const List<Widget> _widgetOptions = <Widget>[
   }
   @override
   Widget build(BuildContext context) {
-      final _size = MediaQuery.of(context).size;
 
     return Scaffold(
      
@@ -58,11 +57,11 @@ backgroundColor: Colors.grey,
               icon: Icon(Icons.person),
               label: 'Portafolio',
             ),
-             BottomNavigationBarItem(
-              backgroundColor: Colors.black,
-              icon: Icon(Icons.phone),
-              label: 'Contact',
-            ),
+            //  BottomNavigationBarItem(
+            //   backgroundColor: Colors.black,
+            //   icon: Icon(Icons.phone),
+            //   label: 'Contact',
+            // ),
           ],
            currentIndex: _selectedIndex,
         selectedItemColor: Colors.black,

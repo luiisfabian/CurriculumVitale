@@ -71,7 +71,7 @@ class _BriefcasePageState extends State<BriefcasePage> {
                 width: size.width * 1,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
-                  color: Color.fromARGB(255, 166, 173, 177),
+                  color: Colors.grey,
                 ),
                 child: SingleChildScrollView(
                   child: Column(

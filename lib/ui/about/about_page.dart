@@ -20,26 +20,26 @@ class _AboutPageState extends State<AboutPage> {
           Positioned(
             left: size.height * 0.1,
             child: Circle(colors: [
-              Color.fromARGB(31, 45, 1, 238),
-              Color.fromARGB(255, 0, 156, 246),
-              Color.fromARGB(255, 0, 11, 108)
+              Colors.black,
+              Colors.grey,
+              Colors.black
             ], radius: size.width * 0.1),
           ),
           Positioned(
             left: size.height * 0.3,
             top: size.height * 0.5,
             child: Circle(colors: [
-              Color.fromARGB(31, 125, 103, 223),
-              Color.fromARGB(255, 0, 156, 246),
-              Color.fromARGB(255, 115, 28, 202)
+              Colors.black,
+              Colors.grey,
+              Color.fromARGB(255, 0, 0, 0)
             ], radius: size.width * 0.1),
           ),
           Positioned(
             left: size.height * 0.6,
             child: Circle(colors: [
-              Color.fromARGB(31, 45, 1, 238),
-              Color.fromARGB(255, 0, 156, 246),
-              Color.fromARGB(255, 0, 11, 108)
+              Colors.black,
+              Colors.grey,
+              Colors.black
             ], radius: size.width * 0.1),
           ),
           Positioned(
@@ -47,25 +47,25 @@ class _AboutPageState extends State<AboutPage> {
             top: size.height * 0.5,
             child: Circle(colors: [
               Color.fromARGB(31, 125, 103, 223),
-              Color.fromARGB(255, 0, 156, 246),
-              Color.fromARGB(255, 115, 28, 202)
+              Colors.grey,
+              Colors.black
             ], radius: size.width * 0.1),
           ),
           Positioned(
             left: size.height * 1.2,
             child: Circle(colors: [
-              Color.fromARGB(31, 45, 1, 238),
-              Color.fromARGB(255, 0, 156, 246),
-              Color.fromARGB(255, 0, 11, 108)
+              Colors.black,
+              Colors.grey,
+              Colors.black
             ], radius: size.width * 0.1),
           ),
           Positioned(
             left: size.height * 1.5,
             top: size.height * 0.5,
             child: Circle(colors: [
-              Color.fromARGB(31, 125, 103, 223),
-              Color.fromARGB(255, 0, 156, 246),
-              Color.fromARGB(255, 115, 28, 202)
+              Colors.black,
+              Colors.grey,
+              Colors.black
             ], radius: size.width * 0.1),
           ),
           Container(
@@ -103,7 +103,7 @@ class _AboutPageState extends State<AboutPage> {
                     padding: EdgeInsets.all(30),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(30),
-                      color: Color.fromARGB(255, 0, 156, 246),
+                      color: Colors.grey,
                     ),
                     child: SingleChildScrollView(
                       child: Column(
@@ -115,7 +115,7 @@ class _AboutPageState extends State<AboutPage> {
                               style: TextStyle(
                                 fontSize: 30,
                                 fontWeight: FontWeight.bold,
-                                color: Colors.white,
+                                color: Colors.black,
                                 fontFamily: 'Raleway',
                               ),
                             ),

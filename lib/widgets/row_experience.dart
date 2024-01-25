@@ -33,10 +33,13 @@ class RowExperience extends StatelessWidget {
               duration: Duration(seconds: 3),
               child: Text(
                 title,
-                style: TextStyle(fontSize: 40.0, color: Colors.white),
+                style: TextStyle(fontSize: 40.0, color: Colors.black),
               ),
             ),
           ),
+        ),
+        SizedBox(
+          height: 100,
         ),
         Expanded(
           child: Container(
