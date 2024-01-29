@@ -15,6 +15,7 @@ class _AboutPageState extends State<AboutPage> {
     final size = MediaQuery.of(context).size;
 
     return Scaffold(
+      backgroundColor: Colors.black54,
       body: Stack(
         children: [
           Positioned(

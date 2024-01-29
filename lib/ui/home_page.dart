@@ -49,12 +49,12 @@ backgroundColor: Colors.grey,
             ),
             BottomNavigationBarItem(
               backgroundColor: Colors.black,
-              icon: Icon(Icons.search),
-              label: 'About',
+              icon: Icon(Icons.person),
+              label: 'Perfil',
             ),
             BottomNavigationBarItem(
               backgroundColor: Colors.black,
-              icon: Icon(Icons.person),
+              icon: Icon(Icons.book),
               label: 'Portafolio',
             ),
             //  BottomNavigationBarItem(

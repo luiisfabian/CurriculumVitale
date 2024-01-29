@@ -48,6 +48,7 @@ class _ProfilePageState extends State<ProfilePage> {
     final size = MediaQuery.of(context).size;
 
     return Scaffold(
+      backgroundColor: Colors.black54,
       body: Container(
         height: size.height,
         width: size.width,
@@ -57,16 +58,13 @@ class _ProfilePageState extends State<ProfilePage> {
               padding: const EdgeInsets.only(top: 20, right: 20, left: 20),
               child: Column(
                 children: [
-                  const Padding(
-                    padding: EdgeInsets.only(top: 20),
-                    child: Text(
-                      "LUIS FABIAN MUÑOZ ORTIZ",
-                      style: TextStyle(
-                          fontFamily: "Courier New",
-                          fontSize: 50,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.black),
-                    ),
+                  Text(
+                    "LUIS FABIAN MUÑOZ ORTIZ",
+                    style: TextStyle(
+                        fontFamily: "Courier New",
+                        fontSize: 50,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.black),
                   ),
                   SizedBox(
                     height: 70,
@@ -92,7 +90,7 @@ class _ProfilePageState extends State<ProfilePage> {
                         width: size.width * 0.3,
                         height: size.height * 0.1,
                         child: Wrap(
-                          alignment: WrapAlignment.spaceAround,
+                          alignment: WrapAlignment.spaceBetween,
                           // crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
                             TextButton.icon(
@@ -140,6 +138,26 @@ class _ProfilePageState extends State<ProfilePage> {
                               ),
                               label: Text(
                                 "Github",
+                                style: TextStyle(color: Colors.black),
+                              ),
+                            ),
+                            TextButton.icon(
+                              style: ButtonStyle(
+                                  backgroundColor:
+                                      MaterialStatePropertyAll(Colors.grey)),
+                              onPressed: () async {
+                                final Uri url =
+                                    Uri.parse('https://github.com/luiisfabian');
+                                if (await launchUrl(url)) {
+                                  throw Exception('Could not launch $url');
+                                }
+                              },
+                              icon: FaIcon(
+                                FontAwesomeIcons.linkedin,
+                                color: Colors.black,
+                              ),
+                              label: Text(
+                                "linkedin",
                                 style: TextStyle(color: Colors.black),
                               ),
                             ),
