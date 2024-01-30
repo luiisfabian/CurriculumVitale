@@ -86,7 +86,7 @@ class _AboutPageState extends State<AboutPage> {
                       child: Text(
                         "PROFILE",
                         style: TextStyle(
-                            fontFamily: "Roboto Slab",
+                            fontFamily: "Courier New",
                             fontSize: 50,
                             fontWeight: FontWeight.bold,
                             color: Colors.black),
@@ -117,7 +117,7 @@ class _AboutPageState extends State<AboutPage> {
                                 fontSize: 30,
                                 fontWeight: FontWeight.bold,
                                 color: Colors.black,
-                                fontFamily: 'Raleway',
+                                fontFamily: 'Courier New',
                               ),
                             ),
                           ),
