@@ -12,10 +12,8 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  
-
-    int _selectedIndex = 0;
-static const List<Widget> _widgetOptions = <Widget>[
+  int _selectedIndex = 0;
+  static const List<Widget> _widgetOptions = <Widget>[
     ProfilePage(),
     AboutPage(),
     BriefcasePage(),
@@ -26,48 +24,44 @@ static const List<Widget> _widgetOptions = <Widget>[
       _selectedIndex = index;
     });
   }
+
   @override
   Widget build(BuildContext context) {
-
     return Scaffold(
-     
       body: Center(
         child: _widgetOptions.elementAt(_selectedIndex),
       ),
-         bottomNavigationBar: BottomNavigationBar(
-          type: BottomNavigationBarType.fixed,
-          selectedLabelStyle: TextStyle(color: Colors.black),
-          selectedIconTheme: IconThemeData(color: Colors.black),
-          
-
-backgroundColor: Colors.grey,
-          items: const <BottomNavigationBarItem>[
-            BottomNavigationBarItem(  
-              backgroundColor: Colors.black,
-              icon: Icon(Icons.home),
-              label: 'Home',
-            ),
-            BottomNavigationBarItem(
-              backgroundColor: Colors.black,
-              icon: Icon(Icons.person),
-              label: 'Perfil',
-            ),
-            BottomNavigationBarItem(
-              backgroundColor: Colors.black,
-              icon: Icon(Icons.book),
-              label: 'Portafolio',
-            ),
-            //  BottomNavigationBarItem(
-            //   backgroundColor: Colors.black,
-            //   icon: Icon(Icons.phone),
-            //   label: 'Contact',
-            // ),
-          ],
-           currentIndex: _selectedIndex,
-        selectedItemColor: Colors.black,
+      bottomNavigationBar: BottomNavigationBar(
+        type: BottomNavigationBarType.fixed,
+        selectedLabelStyle: TextStyle(color: Colors.white),
+        selectedIconTheme: IconThemeData(color: Colors.white),
+        backgroundColor: Theme.of(context).primaryColor,
+        items: const <BottomNavigationBarItem>[
+          BottomNavigationBarItem(
+            backgroundColor: Colors.white,
+            icon: Icon(Icons.home),
+            label: 'Home',
+          ),
+          BottomNavigationBarItem(
+            backgroundColor: Colors.white,
+            icon: Icon(Icons.person),
+            label: 'Perfil',
+          ),
+          BottomNavigationBarItem(
+            backgroundColor: Colors.white,
+            icon: Icon(Icons.book),
+            label: 'Portafolio',
+          ),
+          //  BottomNavigationBarItem(
+          //   backgroundColor: Colors.black,
+          //   icon: Icon(Icons.phone),
+          //   label: 'Contact',
+          // ),
+        ],
+        currentIndex: _selectedIndex,
+        selectedItemColor: Colors.white,
         onTap: _onItemTapped,
-        ),
-
-      );
+      ),
+    );
   }
 }
