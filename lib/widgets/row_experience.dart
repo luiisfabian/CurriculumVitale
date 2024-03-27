@@ -33,7 +33,8 @@ class RowExperience extends StatelessWidget {
               duration: Duration(seconds: 3),
               child: Text(
                 title,
-                style: TextStyle(fontSize: 40.0, color: Colors.black),
+                style: TextStyle(
+                    fontSize: 40.0, color: Theme.of(context).primaryColor),
               ),
             ),
           ),
@@ -43,6 +44,10 @@ class RowExperience extends StatelessWidget {
         ),
         Expanded(
           child: Container(
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(30),
+              color: Theme.of(context).dividerColor,
+            ),
             padding: EdgeInsets.all(20),
             width: size.width * 0.5,
             // padding: EdgeInsets.all(20),
@@ -56,56 +61,54 @@ class RowExperience extends StatelessWidget {
                         duration: Duration(seconds: 3),
                         child: Text(
                           experienceText1.toString(),
-                          style: TextStyle(fontSize: 20),
+                          style: TextStyle(fontSize: 20, color: Theme.of(context).primaryColor),
                         ))
-                    : Text(""),
+                    : Container(),
                 experienceText2 != null
                     ? FadeInLeft(
                         duration: Duration(seconds: 3),
                         child: Text(
                           experienceText2.toString(),
-                          style: TextStyle(fontSize: 20),
+                          style: TextStyle(fontSize: 20, color: Theme.of(context).primaryColor),
                         ))
-                    : Text(""),
+                    : Container(),
                 experienceText3 != null
                     ? FadeInLeft(
                         duration: Duration(seconds: 3),
                         child: Text(
                           experienceText3.toString(),
-                          style: TextStyle(fontSize: 20),
+                          style: TextStyle(fontSize: 20, color: Theme.of(context).primaryColor),
                         ))
-                    : Text(""),
+                    : Container(),
                 experienceText4 != null
                     ? FadeInLeft(
                         duration: Duration(seconds: 3),
                         child: Text(
                           experienceText4.toString(),
-                          style: TextStyle(fontSize: 20),
+                          style: TextStyle(fontSize: 20, color: Theme.of(context).primaryColor),
                         ))
-                    : Text(""),
+                    : Container(),
                 experienceText5 != null
                     ? FadeInLeft(
                         duration: Duration(seconds: 3),
                         child: Text(
                           experienceText5.toString(),
-                          style: TextStyle(fontSize: 20),
+                          style: TextStyle(fontSize: 20, color: Theme.of(context).primaryColor),
                         ))
-                    : Text(""),
+                    : Container(),
                 experienceText6 != null
                     ? FadeInLeft(
                         duration: Duration(seconds: 3),
                         child: Text(
                           experienceText6.toString(),
-                          style: TextStyle(fontSize: 20),
+                          style: TextStyle(fontSize: 20, color: Theme.of(context).primaryColor),
                         ))
-                    : Text(""),
+                    : Container(),
               ],
             ),
           ),
         ),
-        Container(
-          width: 20,
-        )
+        
       ],
     );
   }

@@ -30,7 +30,7 @@ class CardWidget extends StatelessWidget {
               child: Center(
                 child: Text(
                   name,
-                  style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
+                  style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold, color: Theme.of(context).primaryColor),
                 ),
               ),
             ),

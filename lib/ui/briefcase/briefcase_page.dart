@@ -16,7 +16,6 @@ class _BriefcasePageState extends State<BriefcasePage> {
     final size = MediaQuery.of(context).size;
 
     return Scaffold(
-      backgroundColor: Colors.black54,
       body: SingleChildScrollView(
         child: Column(
           children: [
@@ -25,7 +24,7 @@ class _BriefcasePageState extends State<BriefcasePage> {
               child: Container(
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(20),
-                  color: Colors.grey,
+                  color: Theme.of(context).secondaryHeaderColor,
                 ),
                 height: size.height * 0.44,
                 width: size.width * 1,
@@ -54,7 +53,8 @@ class _BriefcasePageState extends State<BriefcasePage> {
                   FadeInRightBig(
                       duration: Duration(seconds: 2),
                       from: 500.0,
-                      child: CardWidget(image: "assets/html.png", name: "HTML")),
+                      child:
+                          CardWidget(image: "assets/html.png", name: "HTML")),
                   FadeInRightBig(
                       duration: Duration(seconds: 2),
                       from: 500.0,
@@ -72,11 +72,14 @@ class _BriefcasePageState extends State<BriefcasePage> {
                 width: size.width * 1,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
-                  color: Colors.grey,
+                  color: Theme.of(context).secondaryHeaderColor,
                 ),
                 child: SingleChildScrollView(
                   child: Column(
                     children: [
+                      SizedBox(
+                        height: 5,
+                      ),
                       RowExperience(
                         title: "Kuvanty",
                         experienceText1: "Maquetación",
@@ -84,6 +87,9 @@ class _BriefcasePageState extends State<BriefcasePage> {
                         experienceText3:
                             "Manejo de base de datos no relacionales",
                         experienceText4: "Maquetación",
+                      ),
+                      SizedBox(
+                        height: 5,
                       ),
                       RowExperience(
                         title: "Colmena Seguros",
@@ -93,14 +99,21 @@ class _BriefcasePageState extends State<BriefcasePage> {
                             "Manejo de base de datos no relacionales y funciones de google Cloud Platform",
                         experienceText4: "Maquetación y diseño",
                       ),
+                      SizedBox(
+                        height: 5,
+                      ),
                       RowExperience(
                         title: "Software Axa colpatria",
-                        experienceText1: "Diseño e emplementacion de HTML y Css",
+                        experienceText1:
+                            "Diseño e emplementacion de HTML y Css",
                         experienceText2:
                             "Desarrollo de aplicacion Web, maquetación",
                         experienceText3:
                             "Manejo de base de datos no relacionales",
                         experienceText4: "Maquetación",
+                      ),
+                      SizedBox(
+                        height: 5,
                       ),
                       RowExperience(
                         title: "WorkOut App",
@@ -109,12 +122,18 @@ class _BriefcasePageState extends State<BriefcasePage> {
                         experienceText3: "Manejo de base de datos",
                         experienceText4: "Maquetación",
                       ),
+                      SizedBox(
+                        height: 5,
+                      ),
                       RowExperience(
                         title: "Espacios Residenciales",
                         experienceText1: "Diseño",
                         experienceText2: "Desarrollo de aplicacion Movil",
                         experienceText3: "Manejo de base de datos",
                         experienceText4: "Maquetación",
+                      ),
+                      SizedBox(
+                        height: 5,
                       ),
                       RowExperience(
                         title: "Schedule App",
