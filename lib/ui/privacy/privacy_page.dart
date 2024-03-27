@@ -114,4 +114,3 @@ class _PrivacyPageState extends State<PrivacyPage> {
     );
   }
   }
-}
