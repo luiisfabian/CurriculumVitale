@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Curriculum Vitale',
+      title: 'Dev. Luis Fabian',
       theme: ThemeData(
           primaryColor: Color(0xFF3498db), // Verde Menta
           scaffoldBackgroundColor:
@@ -45,7 +45,7 @@ class MyApp extends StatelessWidget {
         '/privacyPage': (context) =>  const PrivacyPage(),
         '/homePage': (context) => const HomePage(),
       },
-      initialRoute: '/privacyPage',
+      initialRoute: '/',
       
     );
   }
