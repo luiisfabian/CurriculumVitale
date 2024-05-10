@@ -1,4 +1,6 @@
 import 'package:animate_do/animate_do.dart';
+import 'package:carousel_slider/carousel_options.dart';
+import 'package:carousel_slider/carousel_slider.dart';
 import 'package:curriculum_vitale/widgets/card_widget.dart';
 import 'package:curriculum_vitale/widgets/row_experience.dart';
 import 'package:flutter/material.dart';
@@ -28,38 +30,69 @@ class _BriefcasePageState extends State<BriefcasePage> {
                 ),
                 height: size.height * 0.44,
                 width: size.width * 1,
-                child: ListView(scrollDirection: Axis.horizontal, children: [
-                  FadeInRightBig(
+                child: CarouselSlider(
+                  items: [
+                    FadeInRightBig(
                       duration: Duration(seconds: 2),
                       from: 500.0,
                       child: CardWidget(
-                          image: "assets/angular.png", name: "ANGULAR")),
-                  FadeInRightBig(
+                        image: "assets/angular.png",
+                        name: "ANGULAR",
+                      ),
+                    ),
+                    FadeInRightBig(
                       duration: Duration(seconds: 2),
                       from: 500.0,
                       child: CardWidget(
-                          image: "assets/flutter.png", name: "FLUTTER")),
-                  FadeInRightBig(
+                        image: "assets/flutter.png",
+                        name: "FLUTTER",
+                      ),
+                    ),
+                    FadeInRightBig(
                       duration: Duration(seconds: 2),
                       from: 500.0,
                       child: CardWidget(
-                          image: "assets/firebase.png", name: "FIREBASE")),
-                  FadeInRightBig(
+                        image: "assets/firebase.png",
+                        name: "FIREBASE",
+                      ),
+                    ),
+                    FadeInRightBig(
                       duration: Duration(seconds: 2),
                       from: 500.0,
                       child: CardWidget(
-                          image: "assets/google-cloud.png",
-                          name: "GOOGLE CLOUD")),
-                  FadeInRightBig(
+                        image: "assets/google-cloud.png",
+                        name: "GOOGLE CLOUD",
+                      ),
+                    ),
+                    FadeInRightBig(
                       duration: Duration(seconds: 2),
                       from: 500.0,
-                      child:
-                          CardWidget(image: "assets/html.png", name: "HTML")),
-                  FadeInRightBig(
+                      child: CardWidget(
+                        image: "assets/html.png",
+                        name: "HTML",
+                      ),
+                    ),
+                    FadeInRightBig(
                       duration: Duration(seconds: 2),
                       from: 500.0,
-                      child: CardWidget(image: "assets/css.png", name: "CSS")),
-                ]),
+                      child: CardWidget(
+                        image: "assets/css.png",
+                        name: "CSS",
+                      ),
+                    ),
+                    // Agrega más elementos aquí...
+                  ],
+                  options: CarouselOptions(
+                    height: size.height * 0.44,
+                    autoPlay: true,
+                    autoPlayInterval: const Duration(seconds: 3),
+                    autoPlayAnimationDuration: const Duration(milliseconds: 500),
+                    autoPlayCurve: Curves.fastOutSlowIn,
+                    pauseAutoPlayOnTouch: true,
+                    aspectRatio: 2.0,
+                    enlargeCenterPage: true,
+                  ),
+                ),
               ),
             ),
             const SizedBox(

@@ -2,6 +2,7 @@ import 'package:curriculum_vitale/ui/about/about_page.dart';
 import 'package:curriculum_vitale/ui/briefcase/briefcase_page.dart';
 import 'package:curriculum_vitale/ui/contact/contact_page.dart';
 import 'package:curriculum_vitale/ui/profile/profile_page.dart';
+import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
@@ -19,11 +20,7 @@ class _HomePageState extends State<HomePage> {
     BriefcasePage(),
     ContactPage()
   ];
-  void _onItemTapped(int index) {
-    setState(() {
-      _selectedIndex = index;
-    });
-  }
+
 
   @override
   Widget build(BuildContext context) {
@@ -31,36 +28,24 @@ class _HomePageState extends State<HomePage> {
       body: Center(
         child: _widgetOptions.elementAt(_selectedIndex),
       ),
-      bottomNavigationBar: BottomNavigationBar(
-        type: BottomNavigationBarType.fixed,
-        selectedLabelStyle: TextStyle(color: Colors.white),
-        selectedIconTheme: IconThemeData(color: Colors.white),
-        backgroundColor: Theme.of(context).primaryColor,
-        items: const <BottomNavigationBarItem>[
-          BottomNavigationBarItem(
-            backgroundColor: Colors.white,
-            icon: Icon(Icons.home),
-            label: 'Home',
-          ),
-          BottomNavigationBarItem(
-            backgroundColor: Colors.white,
-            icon: Icon(Icons.person),
-            label: 'Perfil',
-          ),
-          BottomNavigationBarItem(
-            backgroundColor: Colors.white,
-            icon: Icon(Icons.book),
-            label: 'Portafolio',
-          ),
-          //  BottomNavigationBarItem(
-          //   backgroundColor: Colors.black,
-          //   icon: Icon(Icons.phone),
-          //   label: 'Contact',
-          // ),
+      bottomNavigationBar: CurvedNavigationBar(
+        backgroundColor: Colors.transparent,
+        animationDuration: const Duration(milliseconds: 300),
+        animationCurve: Curves.easeInOut,
+        height: 60,
+        items: const [
+          Icon(Icons.home, color: Colors.white),
+          Icon(Icons.person, color: Colors.white),
+          Icon(Icons.book, color: Colors.white),
         ],
-        currentIndex: _selectedIndex,
-        selectedItemColor: Colors.white,
-        onTap: _onItemTapped,
+        index: _selectedIndex,
+        onTap: (index) {
+          setState(() {
+            _selectedIndex = index;
+          });
+        },
+        color: Theme.of(context).primaryColor,
+        buttonBackgroundColor: Theme.of(context).primaryColor,
       ),
     );
   }
