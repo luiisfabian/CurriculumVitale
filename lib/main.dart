@@ -20,33 +20,33 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Dev. Luis Fabian',
       theme: ThemeData(
-          primaryColor: Color(0xFF3498db), // Verde Menta
+          primaryColor: const Color(0xFF3498db), // Verde Menta
           scaffoldBackgroundColor:
-              Color(0xFFecf0f1), // Gris Claro para el fondo
-          backgroundColor: Colors.white, // Color de fondo general
-          textTheme: TextTheme(
-            bodyText1: TextStyle(color: Colors.black87), // Texto principal
-            bodyText2: TextStyle(
+              const Color(0xFFecf0f1), // Color de fondo general
+          textTheme: const TextTheme(
+            bodyLarge: TextStyle(color: Colors.black87), // Texto principal
+            bodyMedium: TextStyle(
                 color: Color(0xFF2c3e50)), // Texto secundario (Gris Oscuro)
           ),
-          buttonTheme: ButtonThemeData(
+          buttonTheme: const ButtonThemeData(
             buttonColor: Color(0xFFF39C12), // Amarillo para botones
             textTheme: ButtonTextTheme.primary,
           ),
-          colorScheme:
-              ColorScheme.fromSwatch().copyWith(secondary: Color(0xFF2ecc71)),
-          fontFamily: 'Courier New'),
+          useMaterial3: true,
+          fontFamily: 'Courier New',
+          colorScheme: ColorScheme.fromSwatch()
+              .copyWith(secondary: const Color(0xFF2ecc71))
+              .copyWith(background: Colors.white)),
       routes: {
         '/': (context) => const HomePage(),
         '/aboutPage': (context) => const AboutPage(),
         '/briefcasePage': (context) => const BriefcasePage(),
         '/contactPage': (context) => const ContactPage(),
         '/profilePage': (context) => const ProfilePage(),
-        '/privacyPage': (context) =>  const PrivacyPage(),
+        '/privacyPage': (context) => const PrivacyPage(),
         '/homePage': (context) => const HomePage(),
       },
       initialRoute: '/',
-      
     );
   }
 }
