@@ -18,7 +18,7 @@ class _ContactPageState extends State<ContactPage> {
           Positioned(
             top: size.height*0.2,
             left: size.height * 0.8,
-            child: Circle(colors: [
+            child: Circle(colors: const [
               Color.fromARGB(31, 102, 98, 98),
               Color.fromARGB(255, 166, 173, 177),
             ], radius: size.width * 0.1),

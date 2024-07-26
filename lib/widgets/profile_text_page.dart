@@ -20,20 +20,20 @@ class ProfileTextPage extends StatelessWidget {
 
     return Column(
       children: [
-        SizedBox(
+        const SizedBox(
           height: 5,
         ),
         SlideInDown(
-          duration: Duration(seconds: 2),
+          duration: const Duration(seconds: 2),
           child: Center(
             child: Container(
-              padding: EdgeInsets.all(10),
+              padding: const EdgeInsets.all(10),
               decoration: BoxDecoration(
                   color: Theme.of(context).focusColor,
                   borderRadius: BorderRadius.circular(20)),
               child: Text(
                 title.toString(),
-                style: TextStyle(
+                style: const TextStyle(
                   fontFamily: "Courier New",
                   fontSize: 40,
                   fontWeight: FontWeight.bold,
@@ -42,19 +42,19 @@ class ProfileTextPage extends StatelessWidget {
             ),
           ),
         ),
-        SizedBox(
+        const SizedBox(
           height: 10,
         ),
         Container(
           width: size.width,
-          padding: EdgeInsets.all(30),
+          padding: const EdgeInsets.all(30),
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(30),
             color: Theme.of(context).dividerColor,
           ),
           child: SingleChildScrollView(
             child: BounceInUp(
-              duration: Duration(seconds: 3),
+              duration: const Duration(seconds: 3),
               child: Column(
                 children: [
                   subtitle1 != null
@@ -101,7 +101,7 @@ class ProfileTextPage extends StatelessWidget {
             ),
           ),
         ),
-        SizedBox(
+        const SizedBox(
           height: 20,
         ),
       ],

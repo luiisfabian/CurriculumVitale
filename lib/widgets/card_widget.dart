@@ -13,11 +13,11 @@ class CardWidget extends StatelessWidget {
       
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(30),
-        color: Color.fromARGB(255, 255, 255, 255),
+        color: const Color.fromARGB(255, 255, 255, 255),
       ),
       width: _width*0.4,
       // height: _height*0.,
-      padding: EdgeInsets.all(20),
+      padding: const EdgeInsets.all(20),
       child: Column(
         children: [
           Image.asset(
@@ -27,7 +27,7 @@ class CardWidget extends StatelessWidget {
             width: double.infinity,
           ),
           Padding(
-            padding: EdgeInsets.only(top: 40),
+            padding: const EdgeInsets.only(top: 40),
             child: Center(
               child: Text(
                 name,
