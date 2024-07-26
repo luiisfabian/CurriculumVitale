@@ -78,9 +78,9 @@ class _AboutPageState extends State<AboutPage> {
                 children: [
                   ProfileTextPage(
                     title:
-                        "Tecnólogo en Sistemas con Experiencia en Desarrollo de Software y Soporte",
+                        "Tecnólogo en Sistemas con Experiencia en Desarrollo de Software",
                     subtitle1:
-                        "Soy un Tecnólogo en Sistemas con una sólida experiencia en el desarrollo de software y el soporte técnico. Mi enfoque se centra en utilizar mis habilidades técnicas y conocimientos para contribuir al éxito de proyectos y garantizar un entorno informático eficiente.",
+                        "Soy un Tecnólogo en Sistemas con una sólida experiencia en el desarrollo de software. Mi enfoque se centra en utilizar mis habilidades técnicas y conocimientos para contribuir al éxito de proyectos y garantizar un entorno informático eficiente.",
                   ),
                   ProfileTextPage(
                     title:
@@ -92,9 +92,9 @@ class _AboutPageState extends State<AboutPage> {
                   ),
                   ProfileTextPage(
                     title:
-                        "Auxiliar de Sistemas en Soporte:",
+                        "Auxiliar de Sistemas:",
                           subtitle1:
-                        "Desempeñé el rol de auxiliar de sistemas, brindando soporte técnico a usuarios y resolviendo eficientemente problemas relacionados con hardware, software y redes.",
+                        "Desempeñé el rol de auxiliar de sistemas, brindando soporte a usuarios y resolviendo eficientemente problemas relacionados con hardware, software y redes.",
                   ),
                    ProfileTextPage(
                     title:
@@ -117,7 +117,7 @@ class _AboutPageState extends State<AboutPage> {
 
                   ProfileTextPage(
                     title:
-                        "Soporte Técnico:",
+                        "Soporte:",
                           subtitle1:
                         "Habilidad para proporcionar soporte a usuarios, identificar y resolver problemas de manera efectiva.",
                   ),
@@ -126,7 +126,7 @@ class _AboutPageState extends State<AboutPage> {
                     title:
                         "Objetivo Profesional:",
                           subtitle1:
-                        "Busco oportunidades para aplicar mis habilidades y experiencia en un entorno dinámico, contribuyendo al desarrollo de soluciones innovadoras y brindando un soporte excepcional a usuarios y sistemas. Mi pasión por la tecnología y mi compromiso con la excelencia me convierten en un candidato ideal para roles que requieran un enfoque integral en desarrollo y soporte de sistemas",
+                        "Busco oportunidades para aplicar mis habilidades y experiencia en un entorno dinámico, contribuyendo al desarrollo de soluciones innovadoras y brindando un soporte excepcional a usuarios y sistemas. Mi pasión por la tecnología y mi compromiso con la excelencia me convierten en un candidato ideal para roles que requieran un enfoque integral en desarrollo",
                   ),
 
 
